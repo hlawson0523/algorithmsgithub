@@ -49,3 +49,14 @@ int mergeSortAndCount(vector<int> &arr, int left, int right) {
     }
     return count;
 }
+
+int main(){
+
+
+    vector<int> arr;
+    arr = {1, 20, 6, 4, 5};
+    int arr_size = arr.size();
+    int result = mergeSortAndCount(arr, 0, arr_size - 1);
+    cout << "Number of inversions are " << result << endl;
+    return 0;
+}
